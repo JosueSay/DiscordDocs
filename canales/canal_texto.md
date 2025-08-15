@@ -25,5 +25,5 @@ En este paso podrás elegir **quién tendrá acceso** al canal:
 
 💡 **Nota**:
 
-* Si llegaste aquí siguiendo la guía de **[🔔 Notificaciones](../notificaciones/guia.md)**, probablemente debas agregar bots como `Pingcord` para que puedan enviar avisos en este canal.
-* Si necesitas que solo usuarios **verificados** tengan acceso, primero crea un **[🎭 Rol especial para verificados](../roles/guia_verificados.md)** y selecciónalo en este paso.
+* Si llegaste aquí siguiendo la guía de **[🔔 Notificaciones](../notificaciones/habilitar_notificaciones.md)**, probablemente debas agregar bots como `Pingcord` para que puedan enviar avisos en este canal.
+* Si necesitas que solo usuarios **verificados** tengan acceso, primero crea un **[🎭 Rol especial para verificados](../roles/permisos_verificados.md)** y selecciónalo en este paso.
