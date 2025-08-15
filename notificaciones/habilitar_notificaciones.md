@@ -1,40 +1,82 @@
-Ir al servidor
-Click en el nombre del servidor
+# 🔔 Guía para Configurar **Pingcord** en tu Servidor de Discord
 
-Ir al directorio de apps
+## 1️⃣ Acceder al directorio de aplicaciones
 
-![Directorio de Apps](./images/directorio_apps.png)
+1. Ve a tu **servidor de Discord**.
+2. Haz clic en el **nombre del servidor**.
+3. Selecciona **📂 Directorio de apps**.
 
-En el buscador ingresamos "pingcord" y lo buscamos
+![📂 Directorio de Apps](./images/directorio_apps.png)
 
-Le damos click al primer resultado que nos salga con la categoria de "servicios"
+## 2️⃣ Buscar y añadir Pingcord
 
-![Directorio de Apps](./images/pingcord_search.png)
+1. En el buscador escribe **`pingcord`**.
+2. Selecciona el primer resultado con categoría **Servicios**.
+  ![🔍 Buscar Pingcord](./images/pingcord_search.png)
 
-le damos a "Añadir aplicación"
+3. Haz clic en **➕ Añadir aplicación**.
+  ![➕ Añadir Pingcord](./images/add_pingcord.png)
 
-![Directorio de Apps](./images/add_pingcord.png)
+## 3️⃣ Autorizar Pingcord
 
-Esto nos mandará a una página donde nos dirá las integraciones que ofrece como twitch youtube, instagram, etc.
+* Serás redirigido a la página oficial de **Pingcord**.
+* Inicia sesión con tu cuenta de **Discord**.
+* Selecciona el **servidor** donde quieres instalarlo.
+* Autoriza los **permisos solicitados**.
+* En la misma página podrás ver las integraciones disponibles:
 
-Primero nos logueamos en la página con nuestro usuario de discord y nos mandará a un listado de nuestros servidores, acá debemos seleccionar el servidor al que queremos agregar el servicio y aceptamos el acceso de "pingcord" debemos autorizar los permisos que nos piden.
+  * 🎥 YouTube
+  * 📺 Twitch
+  * 📷 Instagram
+  * 🎵 TikTok
+  * Entre otros.
 
-En la misma página podemos ver cuales integraciones tenemos y servicios
+![⚙️ Interfaz de Pingcord](./images/pingcord_ui.png)
 
-Entonces para notificar podemos darle click a cualquiera de esos servicios disponibles
+## 4️⃣ Crear canales para notificaciones
 
-![Directorio de Apps](./images/pingcord_ui.png)
+Se recomienda tener canales dedicados para que las notificaciones estén organizadas.
 
-Sin embargo debemos crear un canal específicamente para lo que queremos por ejemplo:
+Ejemplos:
 
 ```bash
 ⌈📺⌋ Directos y Videos
-```
-
-para ello puedes leer la guia de canales (usaremos la guia canal_texto) que se encuentra [Aquí](../canales/canal_texto.md)
-
-Se puede crear otro canal para clips por ejemplo de tiktok:
-
-```bash
 ⌈✂️⌋ Clips
 ```
+
+📌 Para crearlos, sigue la **[guía de creación de canales de texto](../canales/canal_texto.md)**.
+
+## 5️⃣ Asignar permisos a Pingcord en los canales
+
+1. Haz clic en la **⚙️ Rueda de ajustes** del canal correspondiente.
+  ![⚙️ Ajustes del canal](./images/ajustes_canal_pc.png)
+2. Ve a la pestaña **🔐 Permisos**.
+3. Añade el **rol de Pingcord** y habilita permisos para enviar mensajes.
+  ![🔐 Permisos Pingcord](./images/permisos_pingcord.png)
+
+## 6️⃣ Configurar integración con YouTube
+
+1. En Pingcord, crea una **nueva integración**.
+2. Selecciona **YouTube**.
+3. Escoge el canal de Discord **"⌈📺⌋ Directos y Videos"** como destino.
+4. Activa notificaciones para:
+
+   * 📡 Streams en vivo
+   * 🎬 Estrenos
+   * 📹 Nuevos videos
+5. Personaliza el mensaje de aviso.
+6. Coloca la **URL del canal de YouTube** en la parte inferior.
+
+![🎥 Configuración de YouTube](./images/pc_uploads.png)
+
+## 7️⃣ Integración con TikTok
+
+* Sigue la **misma mecánica** que con YouTube.
+* Usa el canal **"⌈✂️⌋ Clips"** como destino.
+
+## 📌 Extra: Autoroles automáticos
+
+Puedes complementar el sistema de notificaciones con un **sistema de autoroles**.
+Revisa este tutorial:
+
+* [¡Crea un Sistema de Autoroles en Discord Fácil y Rápido!](https://www.youtube.com/watch?v=FndI9qMEdvU)

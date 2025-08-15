@@ -1,49 +1,145 @@
-Se crea un nuevo rol para ello se puede seguir la guia de [crear roles](./crear_rol.md) y si se quieren saber más sobre los permisos se puede leer [explicacion de permisos](./permisos.md):
+# Guía para Crear Roles Verificado y No Verificado + Configurar Incorporación de Miembros ✅
 
-Se crea un rol como:
+## 1️⃣ Crear roles de verificación
+
+Para crear un rol sigue la **[guía de creación de roles](./crear_rol.md)** y, para conocer más sobre cada permiso, revisa la **[explicación de permisos](./permisos.md)**.
+
+Roles recomendados:
 
 ```bash
 ✅ Verificado
+❌ No Verificado
 ```
 
-Se peuden habilitar los permisos:
+### Permisos sugeridos para ambos roles
 
-| Nombre del Permiso                     | Estado | Nota / Explicación                                               |
-| -------------------------------------- | ------ | ---------------------------------------------------------------- |
-| Ver canales                            | ✅      | Necesario para que puedan ver los canales habilitados a ese rol. |
-| Cambiar apodo                          | ✅      | Opcional, permite que se pongan un alias dentro del servidor.    |
-| Crear invitación                       | ✅      | Opcional en caso de que se quieran crear invitaciones.           |
-| Enviar mensajes y crear publicaciones  | ✅      | Permite escribir en chats y foros.                               |
-| Enviar mensajes en hilos/publicaciones | ✅      | Permite responder y participar en hilos o publicaciones.         |
-| Insertar enlaces                       | ✅      | Permite compartir links con vista previa.                        |
-| Adjuntar archivos                      | ✅      | Permite enviar imágenes, videos o documentos.                    |
-| Añadir reacciones                      | ✅      | Permite reaccionar con emojis a mensajes.                        |
-| Usar emojis externos                   | ➖      | Opcional, requiere Nitro.                                        |
-| Usar stickers externos                 | ➖      | Opcional, requiere Nitro.                                        |
-| Leer historial de mensajes             | ✅      | Permite ver mensajes anteriores antes de unirse.                 |
-| Conectar                               | ✅      | Permite unirse a canales de voz.                                 |
-| Hablar                                 | ✅      | Permite usar el micrófono en canales de voz.                     |
-| Usar comandos de aplicaciones          | ✅      | Permite usar comandos de bots y apps integradas.                 |
+*(puedes quitar algunos en "No Verificado" si lo consideras necesario)*
 
-se debe crear tener los canales en privado de tal modo que se pueden crear los canales para poder habilitar
+| Permiso                                | Estado | Explicación breve                                       |
+| -------------------------------------- | ------ | ------------------------------------------------------- |
+| Ver canales                            | ✅      | Necesario para que vean los canales asignados a su rol. |
+| Cambiar apodo                          | ✅      | Opcional, permite cambiar su alias en el servidor.      |
+| Crear invitación                       | ✅      | Opcional, para invitar nuevos miembros.                 |
+| Enviar mensajes y crear publicaciones  | ✅      | Permite escribir en chats y foros.                      |
+| Enviar mensajes en hilos/publicaciones | ✅      | Participar en hilos y foros.                            |
+| Insertar enlaces                       | ✅      | Compartir links con vista previa.                       |
+| Adjuntar archivos                      | ✅      | Subir imágenes, videos o documentos.                    |
+| Añadir reacciones                      | ✅      | Reaccionar a mensajes con emojis.                       |
+| Usar emojis externos                   | ➖      | Opcional, requiere Nitro.                               |
+| Usar stickers externos                 | ➖      | Opcional, requiere Nitro.                               |
+| Leer historial de mensajes             | ✅      | Ver mensajes previos antes de unirse.                   |
+| Conectar                               | ✅      | Entrar a canales de voz.                                |
+| Hablar                                 | ✅      | Usar el micrófono.                                      |
+| Usar comandos de aplicaciones          | ✅      | Ejecutar comandos de bots y apps.                       |
 
-para este ejemplo se trabajará en conjunto para [crear un canal](../canales/crear_categoria.md) y creando un caales para [notificacion de contenido](../notificaciones/habilitar_notificaciones.md) dentro de la categoría sin embargo previamente se debe poder habilitar reglas y comunidad para ello se puede seguir la guia para [habilitar comunidad](../reglas/habilitar_comunidad.md)
+## 2️⃣ Configurar canales privados por rol
 
-para verificar que tenemos todo bien hasta el momento podemos verificar que el nombre del servidor esta con un logo como engranaje con una casa y que el canal de reglas está con un simbolo diferente de los demás como "#", depues de esto iremos a ajustes de servidor clickando el nombre del servidor:
+* Los canales que usen estos roles deben estar configurados como **privados**.
+* Para ello puedes crear categorías y canales siguiendo:
 
-![Ajustes servidor](./images/ajustes_servidor.png)
+  * 📂 **[Crear categoría](../canales/crear_categoria.md)**
+  * 💬 **[Crear canal de notificaciones](../notificaciones/habilitar_notificaciones.md)**
+* Antes de continuar, asegúrate de **habilitar reglas y comunidad** con la guía:
 
-Luego iremos a la sección de "Incorporación" y le daremos click a "Echa un vistazo"
+  * 🌐 **[Habilitar comunidad](../reglas/habilitar_comunidad.md)**
 
-![Incorporación](./images/incorporacion.png)
+## 3️⃣ Verificar la configuración inicial
 
-Acá veremos 5 fases en la primera fase es de seguridad:
+1. Confirma que el **nombre del servidor** muestra un ícono de engranaje con una casa 🏠⚙️.
+2. El canal de reglas debe tener un símbolo diferente (#📜).
 
-- Proteccion contra ataques y CAPTCHA
-- Protección de MD y spam
-- AutoMod
-- Permisos
+## 4️⃣ Configurar la incorporación de miembros
 
-Presionamos el botón de "entendido" y "siguiente"
+1. Ve a **⚙️ Ajustes del servidor** → **🪪 Incorporación**.
+2. Haz clic en **Echa un vistazo**.
 
-segunda fases de canales predeterminados aca debemos seleccionar los canales que deberían tener para visualizar todos en un inicio
+![⚙️ Ajustes servidor](./images/ajustes_servidor.png)
+![🪪 Incorporación](./images/incorporacion.png)
+
+### 🔹 Fase 1: Seguridad
+
+Opciones a configurar:
+
+* Protección contra ataques y CAPTCHA.
+* Protección contra MD y spam.
+* AutoMod.
+* Permisos.
+
+📌 **AutoMod**
+Crea un canal para recibir alertas:
+
+```bash
+⌈🤖🚨⌋ Alertas automod
+```
+
+En la categoría "Información" y con permisos para el rol **🛠️ Control**.
+
+Configura AutoMod para:
+
+* Bloquear palabras en nombres de perfil.
+* Bloquear contenido sospechoso de spam.
+* Bloquear palabras malsonantes o de contenido sexual.
+* Bloquear palabras personalizadas (puedes usar regex).
+
+📌 **Permisos**
+
+* Solo el **dueño del servidor** puede habilitar el requisito de **A2F** (autenticación en dos factores) para acciones de moderación.
+* Revisa permisos arriesgados en `@everyone` y corrígelos.
+
+### 🔹 Fase 2: Canales predeterminados
+
+* Crea una categoría de **Testing** para mostrar al menos **7 canales públicos**:
+
+```bash
+⌈🧪⌋ Testing
+⌈1️⃣⌋ Canal 1
+⌈2️⃣⌋ Canal 2
+⌈3️⃣⌋ Canal 3
+⌈4️⃣⌋ Canal 4
+⌈5️⃣⌋ Canal 5
+⌈6️⃣⌋ Canal 6
+⌈7️⃣⌋ Canal 7
+```
+
+* En la categoría "Información", crea:
+
+```bash
+⌈🌐⌋ Redes
+⌈👤⌋ Verificate
+```
+
+* Estos últimos servirán para la fase 3 y 4.
+
+### 🔹 Fase 3: Preguntas de personalización
+
+* Ejemplo de pregunta: *"¿Me sigues en Twitch?"*
+* Se puede mostrar antes o después de unirse al servidor.
+* Sirve para guiar al usuario a roles o canales.
+
+>**Nota:** Una vez realizado la verificación se puede eliminar las preguntas.
+
+### 🔹 Fase 4: Guía del servidor
+
+* Añade entre **3 y 5 tareas** que el usuario debe realizar al unirse.
+* Ejemplos:
+
+  * Visitar el canal `⌈👤⌋ Verificate`
+  * Comentar en `⌈1️⃣⌋ Canal 1`
+  * Comentar en `⌈2️⃣⌋ Canal 2`
+
+![📋 Ejemplo de tareas](./images/tasks.png)
+
+* Agrega un cartel de bienvenida indicando quién lo envía y el mensaje.
+
+### 🔹 Fase 5: Revisión final
+
+* Verifica que todos los canales necesarios están creados y asignados.
+* Habilita la incorporación de miembros.
+
+![✅ Final incorporación](./images/incorporacion_fin.png)
+
+## 5️⃣ Roles automáticos por preguntas
+
+Para agregar roles automáticos según respuestas, revisa este tutorial:
+
+* [🚀 COMO PONER ROLES AUTOMÁTICOS EN DISCORD 2025 (auto roles) *fácil y rápido*](https://www.youtube.com/watch?v=Z6sE3lL8DpU)
